@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: min-content;
+  column-gap: 18px;
+  row-gap: 18px;
+}

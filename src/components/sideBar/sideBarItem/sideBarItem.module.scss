@@ -1,0 +1,12 @@
+@import "../../../styles/index.scss";
+
+.container {
+  padding: 12px;
+  cursor: pointer;
+
+  &.active {
+    background-color: $fern;
+    color: $white;
+    border-radius: 12px;
+  }
+}
