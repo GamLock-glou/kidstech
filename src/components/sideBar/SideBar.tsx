@@ -17,14 +17,16 @@ export const SideBar = memo(() => {
   );
   return (
     <div className={styles.container}>
-      {[...filterTags].map((tag) => (
-        <SideBarItem
-          key={tag}
-          isActive={activeTag === tag}
-          onClick={onClick}
-          name={tag}
-        />
-      ))}
+      <div className={styles.wrapper}>
+        {[...filterTags].map((tag) => (
+          <SideBarItem
+            key={tag}
+            isActive={activeTag === tag}
+            onClick={onClick}
+            name={tag}
+          />
+        ))}
+      </div>
     </div>
   );
 });

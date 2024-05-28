@@ -1,10 +1,10 @@
-import { FC } from "react"
+import { FC, memo } from "react"
 import { IData } from "../../../types"
 import styles from "./courseItem.module.scss";
 
 interface ICourseItemProps extends IData {}
 
-export const CourseItem: FC<ICourseItemProps> = ({name, bgColor, image}) => {
+export const CourseItem: FC<ICourseItemProps> = memo(({name, bgColor, image}) => {
   return (
     <div className={styles.container}>
       <div style={{background: bgColor}} className={styles.backgroundWrapper}>
@@ -13,4 +13,4 @@ export const CourseItem: FC<ICourseItemProps> = ({name, bgColor, image}) => {
       <div className={styles.text}>{name}</div>
     </div>
   )
-}
+})
