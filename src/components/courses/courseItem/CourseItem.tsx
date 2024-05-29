@@ -14,7 +14,7 @@ export const CourseItem: FC<ICourseItemProps> = memo(({name, bgColor, image}) =>
       <div style={{background: bgColor}} className={styles.backgroundWrapper}>
         {inView && <img src={image} alt={name} />}
       </div>
-      <div className={styles.text}>{name}</div>
+      <p className={styles.text}>{name}</p>
     </div>
   )
 })

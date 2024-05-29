@@ -12,12 +12,12 @@ export const SideBarItem: FC<ISideBarItemProps> = memo(
   ({ name, isActive, onClick }) => {
     const onTagClick = () => onClick(name);
     return (
-      <div
+      <p
         onClick={onTagClick}
         className={cn(styles.container, { [styles.active]: isActive })}
       >
         {name}
-      </div>
+      </p>
     );
   }
 );

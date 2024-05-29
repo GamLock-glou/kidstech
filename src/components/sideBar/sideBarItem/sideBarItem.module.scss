@@ -9,4 +9,8 @@
     color: $white;
     border-radius: 12px;
   }
+
+  &:hover {
+    @extend .active;
+  }
 }
