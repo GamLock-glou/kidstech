@@ -8,6 +8,7 @@ interface ICourseItemProps extends IData {}
 export const CourseItem: FC<ICourseItemProps> = memo(({name, bgColor, image}) => {
   const { ref, inView } = useInView({
     threshold: 0,
+    triggerOnce: true
   });
   return (
     <div ref={ref} className={styles.container}>
